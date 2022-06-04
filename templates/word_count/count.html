@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Count</title>
+</head>
+<body>
+
+    <a href="{% url 'home' %}">Start Again!</a>
+    <h3>This is your text</h3>
+    <p> {{ text }} </p>
+    <h4>Your text has {{ n }} words </h4>
+    
+    {% for k, v in words %}
+    <p> {{ k }} is repeated <strong>{{ v }}</strong> times in the text.</p>
+    {% endfor %}
+    
+</body>
+</html>
